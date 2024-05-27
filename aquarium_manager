@@ -1,0 +1,46 @@
+import tkinter as tk
+
+def open_fish_page():
+    # Functionality to open the fish page
+    pass
+
+def open_plants_page():
+    # Functionality to open the plants page
+    pass
+
+def open_maintenance_page():
+    # Functionality to open the maintenance page
+    pass
+
+def open_reports_page():
+    # Functionality to open the reports page
+    pass
+
+def exit_program():
+    root.destroy()
+
+# Create the main window
+root = tk.Tk()
+root.title("Aquarium Manager")
+
+# Set a fixed width for the buttons
+button_width = 20
+
+# Create buttons with fixed width
+fish_button = tk.Button(root, text="Fish", width=button_width, command=open_fish_page)
+fish_button.pack()
+
+plants_button = tk.Button(root, text="Plants", width=button_width, command=open_plants_page)
+plants_button.pack()
+
+maintenance_button = tk.Button(root, text="Maintenance", width=button_width, command=open_maintenance_page)
+maintenance_button.pack()
+
+reports_button = tk.Button(root, text="Reports", width=button_width, command=open_reports_page)
+reports_button.pack()
+
+exit_button = tk.Button(root, text="Exit", width=button_width, command=exit_program)
+exit_button.pack()
+
+# Start the Tkinter event loop
+root.mainloop()
